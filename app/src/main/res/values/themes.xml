@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme: Light -->
+    <style name="Theme.Reader" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+
+    <!-- Dark theme -->
+    <style name="Theme.Reader.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:statusBarColor">@color/surface_dark</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.Reader.Splash" parent="Theme.Reader.Dark">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正在播放..."
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Progress info -->
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第 0 / 0 段"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Current text being spoken -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/surface_dark"
+        android:radius="16dp"
+        android:padding="24dp"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:id="@+id/tvSpokenText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:lineSpacingExtra="8dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:breakStrategy="high_quality" />
+    </FrameLayout>
+
+    <!-- Speed control -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="语速"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <SeekBar
+            android:id="@+id/seekBarSpeed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:max="20"
+            android:progress="10"
+            android:thumbTint="@color/primary"
+            android:progressTint="@color/primary" />
+
+        <TextView
+            android:id="@+id/tvSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0x"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Playback controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_book"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="上一段"
+            android:rotation="180"
+            android:tint="@color/text_primary" />
+
+        <ImageButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_play"
+            android:background="@drawable/btn_play_bg"
+            android:contentDescription="播放"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:tint="@color/white"
+            android:padding="16dp" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_book"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="下一段"
+            android:tint="@color/text_primary" />
+    </LinearLayout>
+
+    <!-- Stop button -->
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="停止听书"
+        android:textSize="14sp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/primary_dark" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"c:/WorkSpace/rdisme/reader/app/src/main/java/com/rdisme/reader\" \"c:/WorkSpace/rdisme/reader/app/src/main/res/layout\" \"c:/WorkSpace/rdisme/reader/app/src/main/res/values\" \"c:/WorkSpace/rdisme/reader/app/src/main/res/drawable\" \"c:/WorkSpace/rdisme/reader/app/src/main/res/mipmap-hdpi\" \"c:/WorkSpace/rdisme/reader/app/src/main/res/mipmap-mdpi\" \"c:/WorkSpace/rdisme/reader/app/src/main/res/mipmap-xhdpi\" \"c:/WorkSpace/rdisme/reader/app/src/main/res/mipmap-xxhdpi\" \"c:/WorkSpace/rdisme/reader/app/src/main/res/mipmap-xxxhdpi\" \"c:/WorkSpace/rdisme/reader/app/src/main/res/xml\")"
+    ],
+    "additionalDirectories": [
+      "c:\\WorkSpace\\rdisme\\reader\\app\\src\\main\\java\\com\\rdisme"
+    ]
+  }
+}
